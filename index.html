@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <style>
+        .card-footer-item.disabled{
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-5by2">
+                                <img src="https://placehold.co/600x100"
+                                    alt="Placeholder image" />
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Ping Pong Score Keeper</p>
+                                    <p class="title is-1"><span id="score-player-1">0</span> to <span id="score-player-2">0</span></p>
+                                    <p class="">Use the buttons below to play.</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <b style="line-height: 38px; margin-right: 10px; display: inline-block;">Playing to </b>
+                                <div class="select" style="display: inline-block;">
+                                    <select id="max-number">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item has-background-primary has-text-white" id="add-player-1">+1 Player One</a>
+                            <a href="#" class="card-footer-item has-background-link  has-text-white" id="add-player-2">+1 Player Two</a>
+                            <a href="#" class="card-footer-item has-background-danger  has-text-white" id="reset-game">Reset</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
